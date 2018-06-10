@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+                crossorigin="anonymous">
+            <link rel="stylesheet" href="css/app.css">
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" type="text/css" href="css/animate.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/series-label.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+            <title>Weather App</title>
+        </head>
+           <div class="animated slideInRight" >  
+        <h1>
+           --Weather Forcasting--
+        </h1>
+        </div>
+        <div class="animated fadeIn">
+        <body>
+            <div class="container">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Enter city name" aria-describedby="basic-addon1" id="cityInput">
+                </div><br>
+                <div>
+                        <button type="button" class="btn btn-primary" id="getWeatherBtn">Get current Weather</button>
+                </div>
+                <br>
+                
+                <p id="getDay"></p>
+                <p id="getDescription"></p>
+                <div class="displayImageandTemp">
+                    <div id="icon"><img src="" alt="image" height=80px width=80px id="wicon"></div>
+                    <div class="displayTemp">
+                            
+                        <h1 id="getTemperature"></h1>
+                        <a href="#">°C</a>|<a href="#">°F</a>
+                        
+                    </div>
+                    <div class="displayInfo">
+                        <div class="info1"><p>Pressure: </p><p id="getPressure"></p>atm</div>
+                        <div class="info1"><p>Humidity: </p><p id="getHumidity"></p>%</div>
+                        <div class="info1"><p>Wind: </p><p id="getWind"></p>mph</div>
+                    </div>
+                    
+                    <div class="btn-group displaybtn" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary" id="temperature">Temperature</button><br><br>
+                        <!--<button type="button" class="btn btn-primary" id="pressure">Pressure</button><br><br>-->
+                        <button type="button" class="btn btn-primary" id="wind">Wind</button><br>
+                    </div>
+                    
+                </div>
+                <br><br><br>
+                <div class="container">
+                <div id="chart-container"></div>
+                </div>
+                <div class="button-container">
+                    <div class="btn-group displaybtn" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary" id="0"></button>
+                        <button type="button" class="btn btn-primary" id="1"></button>
+                        <button type="button" class="btn btn-primary" id="2"></button>
+                        <button type="button" class="btn btn-primary" id="3"></button>
+                        <button type="button" class="btn btn-primary" id="4"></button>
+                        <button type="button" class="btn btn-primary" id="5"></button>
+                        <button type="button" class="btn btn-primary" id="6"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+            <script src="js/app.js"></script> 
+        </body>
+        </html>
+       

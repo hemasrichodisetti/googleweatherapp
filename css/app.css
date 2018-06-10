@@ -1,0 +1,63 @@
+.container {
+    position: relative;
+    top: 70px;
+}
+
+.displayImageandTemp {
+    display: inline-flex;
+    font-size:30px;
+}
+
+.displayTemp {
+    display: inline-flex;
+    font-size: 30px;
+}
+
+.displayButton {
+    background: transparent;
+}
+
+.displayInfo {
+    position: relative;
+    /*display: block;*/
+    margin-left: 600px;
+}
+
+.displaybtn {
+    position: relative;
+    top: 100px;
+
+}
+
+.info1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.button-container {
+    display: none;
+    margin-left:275px;
+    margin-bottom:30px;
+    
+}
+
+#chart-container {
+    min-width: 310px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto
+}
+h1{
+    font-family:Courier;
+    text-align: center;
+    
+}
+body{
+    background-image: url("https://media.istockphoto.com/vectors/the-sun-and-sky-weather-and-forecast-a-transparent-background-vector-vector-id872150446?k=6&m=872150446&s=612x612&w=0&h=Qm1TMyedxASNFtaFtgf--vcPdCs3xlReicYqTU0XyXg=");
+    background-size:cover;
+}
+#getDay,#getDescription{
+font-size:25px;
+}
